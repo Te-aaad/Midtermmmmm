@@ -1,0 +1,150 @@
+
+
+'''def find_min(arr):
+    min_element = arr[0]
+    for num in arr:
+        if num < min_element:
+            min_element = num
+    return min_element
+if __name__ == "__main__":
+    array = [3,10,1,2,50]
+    min_element = find_min(array)
+    print(min_element)
+
+def calculator():
+    print("Calculator: ")
+    print("Select operation:")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    
+    choice = int(input("Enter your choice between 1/2/3/4: "))
+    
+    if choice in [1, 2, 3, 4]:  # Compare as integers
+        num1 = float(input("Enter num1: "))
+        num2 = float(input("Enter num2: "))
+        
+        if choice == 1:  # Compare with integers
+            result = num1 + num2
+            print(f"{result}, addition")
+        
+        elif choice == 2:
+            result = num1 - num2
+            print(f"{result}, subtraction")
+        
+        elif choice == 3:
+            result = num1 * num2
+            print(f"{result}, multiplication")
+        
+        elif choice == 4:
+            if num2 != 0:
+                result = num1 / num2
+                print(f"{result}, division")
+            else:
+                print("Error! Division by zero.")
+    else:
+        print("Invalid input")
+
+if __name__ == "__main__":
+    calculator()
+
+            
+def is_palindrome(s):
+    s = s.replace(" ", "").lower()
+    return s == s[::-1]
+if __name__ == "__main__":
+    input_string = "man  plan  canal Panama"
+    if is_palindrome(input_string):
+        print(f"{input_string}: is palindrome")
+    else:
+        print(f"{input_string}: is not palindrome")
+    
+
+def find_max(arr):
+
+    max_element = arr[0]#start with 0 in array
+    for num in arr:
+        if num > max_element:
+            max_element = num
+    return max_element
+    
+if __name__ == "__main__":
+    array = [100,10,30,50,20]
+    max_element = find_max(array)
+    print(f"{max_element}")
+    
+    
+        
+
+def factorial(num):
+    result = 1
+    for i in range(1, num+1):
+        result *=i
+    return result
+if __name__ == "__main__":
+    num = 5
+    result = factorial(num)
+    print(f"{result}")
+
+def is_prime(num):
+    if num <=1:
+        return False
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+        return True
+if __name__ == "__main__":
+    num = 10
+    result = is_prime(num)
+    print(f"{result}")
+
+#Reverse a String: Reverse the characters in a given string.
+def reverse(s):
+    words = s.split()
+    reverses_word = [word[::-1]for word in words]
+    return ' '.join(reverses_word)
+
+if __name__ == "__main__":
+    input_string = "Hello worlds"
+    result = reverse(input_string)
+    print(result)
+
+
+def even_or_odd():
+    n = int(input("Enter num: "))
+    if n %2==0:
+        print("even")
+    else:
+        print("odd")
+
+if __name__ == "__main__":
+    even_or_odd()
+   
+   
+    
+list = ["Marvin", "Jay", "Te-ad"]
+list.append("Gumboc")
+print(list)
+
+
+class bookshop:
+    def __init__(self, title):
+        self.title = title
+    def book(self):
+        print("The title of book is: ", self.title)
+        
+
+b = bookshop('tead')
+b.book()
+#Factorial of a Number: Calculate the factorial of a number.
+def factorial(n):
+    result = 1
+    for i in range(1, n+1):
+        result *=i
+    return result
+    
+if __name__ == "__main__":
+    num = 5
+    result = factorial(num)
+    print(result)'''
